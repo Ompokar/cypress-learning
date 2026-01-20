@@ -14,10 +14,16 @@ it('Ecommerce example', function () {
 
     cy.get('.shop-menu > .nav > :nth-child(5) > a').click();
 
+    //assertions implicit
+
     cy.get('.shop-menu > .nav > :nth-child(6) > a')
         .should('be.visible')                          
         .and('contain', 'API Testing')               
         .find('i')                                     
         .should('have.class', 'fa-list');
+
+    //assertion explicit
+
+    expect(true).to.be.true
 
 })
