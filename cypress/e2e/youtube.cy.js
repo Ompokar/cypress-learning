@@ -14,6 +14,4 @@ it('youtube search', function(){
 
     cy.get(':nth-child(4) > #endpoint > #icon > .yt-icon-shape > div').click();
 
-
-
 })
