@@ -1,0 +1,91 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-01-20T13:23:39.869Z",
+    "end": "2026-01-20T13:23:50.277Z",
+    "duration": 10408,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b5ecf224-1c3f-4847-b22a-f5d949a49c8e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test.cy.js",
+      "file": "cypress\\e2e\\test.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "google search",
+          "fullTitle": "google search",
+          "timedOut": null,
+          "duration": 7305,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://www.google.com');\ncy.get('[name=\"q\"]').type('i am devil of my world{enter}');\ncy.get('.FPdoLc > center > [name=\"btnK\"]', '{timeout:5000}').click();\ncy.get('[data-hveid=\"CBYQAA\"] > .C6AK7c > .mXwfNd > .R1QWuf').click();\ncy.get('#_wDJmacLHDqyc4-EP0fKPyA4_50').click();",
+          "err": {
+            "message": "CypressError: `cy.get()` only accepts an options object for its second argument. You passed {timeout:5000}\n\nhttps://on.cypress.io/get",
+            "estack": "CypressError: `cy.get()` only accepts an options object for its second argument. You passed {timeout:5000}\n\nhttps://on.cypress.io/get\n    at $Command.get (https://www.google.com/__cypress/runner/cypress_runner.js:135277:68)\n    at cyFn (https://www.google.com/__cypress/runner/cypress_runner.js:146224:19)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypress-demo/./cypress/e2e/test.cy.js:9:7)",
+            "diff": null
+          },
+          "uuid": "365bfa37-58b4-4394-b697-4442e0bfee31",
+          "parentUUID": "b5ecf224-1c3f-4847-b22a-f5d949a49c8e",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "365bfa37-58b4-4394-b697-4442e0bfee31"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 7305,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

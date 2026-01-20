@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-01-20T13:22:40.763Z",
+    "end": "2026-01-20T13:22:44.396Z",
+    "duration": 3633,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c097f959-5691-4937-bb62-ca872da3a05b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\File_upload.cy.js",
+      "file": "cypress\\e2e\\File_upload.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "File Upload",
+          "fullTitle": "File Upload",
+          "timedOut": null,
+          "duration": 566,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit('https://trytestingthis.netlify.app/');\ncy.get('[name=\"myfile\"]').attachFile('assertions cypress');",
+          "err": {},
+          "uuid": "5452c4f8-d2bf-4686-b3d1-048703fe1519",
+          "parentUUID": "c097f959-5691-4937-bb62-ca872da3a05b",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "5452c4f8-d2bf-4686-b3d1-048703fe1519"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 566,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

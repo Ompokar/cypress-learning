@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 1,
+    "failures": 0,
+    "start": "2026-01-20T13:23:17.615Z",
+    "end": "2026-01-20T13:23:33.593Z",
+    "duration": 15978,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 33.33333333333333,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d77274d2-b9da-4a06-b32f-948be683da2a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\pom.cy.js",
+      "file": "cypress\\e2e\\pom.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "98df923e-a950-4a7e-b26f-94de370ae1e5",
+          "title": "All Login Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login With Valid Credentials",
+              "fullTitle": "All Login Tests Login With Valid Credentials",
+              "timedOut": null,
+              "duration": 7029,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterUsername('admin');\nloginPage.enterPassword('admin123');\nloginPage.clickLogin();",
+              "err": {},
+              "uuid": "93dcd991-88c9-49a6-aafa-44d1cd4c5313",
+              "parentUUID": "98df923e-a950-4a7e-b26f-94de370ae1e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login With InValid Credentials",
+              "fullTitle": "All Login Tests Login With InValid Credentials",
+              "timedOut": null,
+              "duration": 4534,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterUsername('Admin');\nloginPage.enterPassword('admin12');\nloginPage.clickLogin();",
+              "err": {},
+              "uuid": "fb2337ae-6206-4961-b458-24c80fd60b90",
+              "parentUUID": "98df923e-a950-4a7e-b26f-94de370ae1e5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "page object model 2",
+              "fullTitle": "All Login Tests page object model 2",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "loginPage.enterUsername('Admin');\nloginPage.enterPassword('Admin123');\nloginPage.clickLogin();",
+              "err": {},
+              "uuid": "88f25397-0646-478b-a9f6-e7bd84fd8696",
+              "parentUUID": "98df923e-a950-4a7e-b26f-94de370ae1e5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "93dcd991-88c9-49a6-aafa-44d1cd4c5313",
+            "fb2337ae-6206-4961-b458-24c80fd60b90"
+          ],
+          "failures": [],
+          "pending": [
+            "88f25397-0646-478b-a9f6-e7bd84fd8696"
+          ],
+          "skipped": [],
+          "duration": 11563,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
