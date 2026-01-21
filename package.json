@@ -4,11 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "pretest": "echo i am pre test",
-    "posttest": "echo i am post test",
-    "test": "echo i am the test",
-    "hello": "echo hello world",
-    "cy-test": "cypress run"
+    "test": "cypress run"
   },
   "keywords": [],
   "author": "",
