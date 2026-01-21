@@ -1,6 +1,16 @@
 pipeline {
     agent any
 
+    options {
+        // This fixes the [90m and [39m scrambled color codes in logs
+        ansiColor('xterm') 
+    }
+
+    environment {
+        // This fixes the symbols like â™‚ by forcing UTF-8 encoding on Windows
+        JAVA_TOOL_OPTIONS = '-Dfile.encoding=UTF-8'
+    }
+
     tools {
         nodejs 'node18'
     }
@@ -20,13 +30,15 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
+                // Using bat because you are on Windows
                 bat 'npm install'
             }
         }
 
         stage('Run Cypress Tests') {
             steps {
-                bat 'npm run test'
+                // Adding NO_COLOR=1 ensures the cleanest possible output for reports
+                bat 'set NO_COLOR=1 && npm run test'
             }
         }
     }
