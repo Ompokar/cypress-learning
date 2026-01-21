@@ -1,0 +1,87 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-01-21T13:18:09.825Z",
+    "end": "2026-01-21T13:18:09.962Z",
+    "duration": 137,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "57e0ec90-2866-4f8c-9b8b-2170a2b1731c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\write_File.cy.js",
+      "file": "cypress\\e2e\\write_File.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Write File Using Fixtures",
+          "fullTitle": "Write File Using Fixtures",
+          "timedOut": null,
+          "duration": 107,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.writeFile('sample.txt', 'Hello my name is Om pokar\\n');\ncy.writeFile('sample.txt', 'I am Currently working as QA', {\n  flag: 'a+'\n});",
+          "err": {},
+          "uuid": "d71e1c1f-ebdd-4f2c-8608-5db8ab1e87ee",
+          "parentUUID": "57e0ec90-2866-4f8c-9b8b-2170a2b1731c",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "d71e1c1f-ebdd-4f2c-8608-5db8ab1e87ee"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 107,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

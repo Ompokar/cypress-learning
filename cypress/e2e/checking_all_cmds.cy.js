@@ -38,18 +38,4 @@ it('checking forward and backword', function(){
     cy.go(1);
     cy.url().should('include','login');
 
-    //     cy.visit('https://automationexercise.com');
-    // cy.get('.shop-menu > .nav > :nth-child(2) > a').click();
-    // cy.get('.shop-menu > .nav > :nth-child(3) > a').click();
-    // cy.get('.shop-menu > .nav > :nth-child(4) > a').click();
-    // cy.go('back');
-    // cy.url().should('include','view_cart');     //we can also add should contain title insteed of url
-    // cy.go('forward');
-    // cy.url().should('include','login');
-    // cy.go(-1);
-    // cy.url().should('include','view_cart');
-    // cy.go(1);
-    // // cy.url().should('include','login');
-
-
 })
