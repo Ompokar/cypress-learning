@@ -30,14 +30,12 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                // Using bat because you are on Windows
                 bat 'npm install'
             }
         }
 
         stage('Run Cypress Tests') {
             steps {
-                // Adding NO_COLOR=1 ensures the cleanest possible output for reports
                 bat 'set NO_COLOR=1 && npm run test'
             }
         }
